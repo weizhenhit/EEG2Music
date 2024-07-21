@@ -6,6 +6,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 ## Quick Start
 
 <audio src="/pic/1.wav"></audio>
+<audio controls src="/pic/1.wav" title="Title"></audio>
 
 ### Create a new post
 
