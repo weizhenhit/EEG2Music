@@ -19,6 +19,9 @@ More info: [Writing](https://hexo.io/docs/writing.html)
 
 ### Run server
 
+![img](/pic/1.png)
+
+
 ``` bash
 $ hexo server
 ```
