@@ -5,8 +5,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ## Quick Start
 
-<audio src="/pic/1.wav"></audio>
-<audio controls src="/pic/1.wav" title="Title"></audio>
+<audio controls src="https://github.com/weizhenhit/EEG2Music/blob/master/source/pic/1.wav" title="Title"></audio>
 
 ### Create a new post
 
@@ -22,7 +21,7 @@ More info: [Writing](https://hexo.io/docs/writing.html)
 
 ### Run server
 
-![img](/pic/1.png)
+![img](https://github.com/weizhenhit/EEG2Music/blob/master/source/pic/1.png)
 
 
 ``` bash
