@@ -7,6 +7,8 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ### Create a new post
 
+{% assert_img 1.jpg This is an example image %}
+
 ``` bash
 $ hexo new "My New Post"
 ```
