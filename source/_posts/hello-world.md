@@ -5,7 +5,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ## Quick Start
 
-<audio controls src="https://github.com/weizhenhit/EEG2Music/blob/master/source/_posts/hello-world/1.wav" title="Title">audio file</audio>
+<audio controls src="/pic/1.wav" title="Title">audio file</audio>
 
 ### Create a new post
 
@@ -17,11 +17,11 @@ $ hexo new "My New Post"
 
 More info: [Writing](https://hexo.io/docs/writing.html)
 
-![This is an example image](https://github.com/weizhenhit/EEG2Music/blob/master/source/_posts/hello-world/1.jpg)
+![This is an example image](hello-world/1.jpg)
 
 ### Run server
 
-![img](https://github.com/weizhenhit/EEG2Music/blob/master/source/pic/1.jpg)
+![img](/pic/1.jpg)
 
 
 ``` bash
