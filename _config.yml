@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true  # 意思是每个md博文会单独配套一个同名文件夹，用来存放图片
+post_asset_folder: false  # 意思是每个md博文会单独配套一个同名文件夹，用来存放图片
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
