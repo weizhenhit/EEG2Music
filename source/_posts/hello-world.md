@@ -5,6 +5,8 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ## Quick Start
 
+<audio src="/pic/1.wav"></audio>
+
 ### Create a new post
 
 {% asset_img 1.jpg This is an example image %}
