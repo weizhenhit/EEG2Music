@@ -8,7 +8,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 ### Create a new post
 
 <audio controls>
-  <source src="/pic/1.wav" type="audio/mpeg">
+  <source src="/EEG2Music/pic/1.wav" type="audio/mpeg">
 </audio>
 
 {% asset_img 1.jpg This is an example image %}
@@ -18,16 +18,6 @@ $ hexo new "My New Post"
 ```
 
 More info: [Writing](https://hexo.io/docs/writing.html)
-
-<iframe
-    frameborder="no"
-    border="0"
-    marginwidth="0"
-    marginheight="0"
-    width=330
-    height=86
-    src="//music.163.com/outchain/player?type=2&id=29947420&auto=1&height=66">
-</iframe>
 
 ### Run server
 
