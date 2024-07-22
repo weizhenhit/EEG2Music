@@ -5,7 +5,9 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ## Quick Start
 
-<audio controls src="/pic/1.wav" title="Title">audio file</audio>
+<audio controls>
+  <source src="/pic/1.wav" type="audio/mpeg">
+</audio>
 
 ### Create a new post
 
@@ -17,7 +19,7 @@ $ hexo new "My New Post"
 
 More info: [Writing](https://hexo.io/docs/writing.html)
 
-![This is an example image](hello-world/1.jpg)
+<img src='/pic/1.jpg' height=400px >
 
 ### Run server
 
