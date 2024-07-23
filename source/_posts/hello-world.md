@@ -1,13 +1,14 @@
 ---
-title: Hello World_My first blog
+title: Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+# Dataset 1: NMED-Tempo
 
-### Create a new post
+## EEG2Music
 
-<table width="900" height="200" border="1">
+### song 1
+
+<table width="900" height="150" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -32,37 +33,269 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
           </tr>
         </tbody></table>
 
-{% asset_img 1.jpg This is an example image %}
+### song 2
 
-``` bash
-$ hexo new "My New Post"
-```
+<table width="900" height="150" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music 1</th>
+            <th style="text-align: center">Reconstructed Music 2</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song2.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song2_sub1_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song2_sub2_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+        </tbody></table>
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+### song 3
 
-### Run server
+<table width="900" height="150" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music 1</th>
+            <th style="text-align: center">Reconstructed Music 2</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song3.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song3_sub1_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song3_sub2_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+        </tbody></table>
+### song 4
 
-![img](/pic/1.jpg)
+<table width="900" height="150" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music 1</th>
+            <th style="text-align: center">Reconstructed Music 2</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song4.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song4_sub1_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song4_sub2_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+        </tbody></table>
+### song 5
 
+<table width="900" height="150" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music 1</th>
+            <th style="text-align: center">Reconstructed Music 2</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song5.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song5_sub1_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song5_sub2_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+        </tbody></table>
+### song 6
 
-``` bash
-$ hexo server
-```
+<table width="900" height="150" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music 1</th>
+            <th style="text-align: center">Reconstructed Music 2</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song6.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song6_sub1_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song6_sub2_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+        </tbody></table>       
+### song 7
 
-More info: [Server](https://hexo.io/docs/server.html)
+<table width="900" height="150" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music 1</th>
+            <th style="text-align: center">Reconstructed Music 2</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song7.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song7_sub1_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song7_sub2_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+        </tbody></table>           
+### song 8
 
-### Generate static files
+<table width="900" height="150" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music 1</th>
+            <th style="text-align: center">Reconstructed Music 2</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song8.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song8_sub1_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song8_sub2_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+        </tbody></table>    
+### song 9
 
-``` bash
-$ hexo generate
-```
+<table width="900" height="150" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music 1</th>
+            <th style="text-align: center">Reconstructed Music 2</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song9.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song9_sub1_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song9_sub2_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+        </tbody></table>    
+### song 10
 
-More info: [Generating](https://hexo.io/docs/generating.html)
+<table width="900" height="150" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music 1</th>
+            <th style="text-align: center">Reconstructed Music 2</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song10.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song10_sub1_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song10_sub2_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+        </tbody></table>    
+        
+# Dataset 2: The music of silence (MOS)
 
-### Deploy to remote sites
+## EEG2Mel2Music
 
-``` bash
-$ hexo deploy
-```
+### melody 1
 
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+<table width="900" height="150" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody1.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song1_sub1_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song1_sub2_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+        </tbody></table>
