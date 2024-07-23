@@ -286,7 +286,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 ### melody 1
 
-<table width="900" height="200" border="1">
+<table width="900" height="250" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
@@ -318,7 +318,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 ### melody 2
 
-<table width="900" height="200" border="1">
+<table width="900" height="250" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
@@ -350,7 +350,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
         
 ### melody 3
 
-<table width="900" height="200" border="1">
+<table width="900" height="250" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
@@ -382,7 +382,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
                 
 ### melody 4
 
-<table width="900" height="200" border="1">
+<table width="900" height="250" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
