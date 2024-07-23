@@ -6,6 +6,8 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 ## EEG2Music
 
+{% asset_img EEG2Music.png Imagined %}
+
 ### song 1
 
 <table width="900" height="150" border="1">
@@ -280,9 +282,11 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 ## EEG2Mel2Music
 
+{% asset_img EEG2Mel2Music.png Imagined %}
+
 ### melody 1
 
-<table width="900" height="150" border="1">
+<table width="900" height="200" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
@@ -314,7 +318,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 ### melody 2
 
-<table width="900" height="150" border="1">
+<table width="900" height="200" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
@@ -346,7 +350,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
         
 ### melody 3
 
-<table width="900" height="150" border="1">
+<table width="900" height="200" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
@@ -378,7 +382,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
                 
 ### melody 4
 
-<table width="900" height="150" border="1">
+<table width="900" height="200" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
