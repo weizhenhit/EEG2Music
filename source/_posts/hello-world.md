@@ -7,9 +7,30 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ### Create a new post
 
-<audio controls>
-  <source src="/EEG2Music/pic/1.wav" type="audio/mpeg">
-</audio>
+<table width="600" height="200" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music 1</th>
+            <th style="text-align: center">Reconstructed Music 2</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song1.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song1_sub1_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song1_sub2_recon_nr_new.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+        </tbody></table>
 
 {% asset_img 1.jpg This is an example image %}
 
