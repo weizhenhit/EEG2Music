@@ -86,6 +86,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
             </th>
           </tr>
         </tbody></table>
+        
 ### song 4
 
 <table width="900" height="150" border="1">
@@ -112,6 +113,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
             </th>
           </tr>
         </tbody></table>
+        
 ### song 5
 
 <table width="900" height="150" border="1">
@@ -138,6 +140,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
             </th>
           </tr>
         </tbody></table>
+
 ### song 6
 
 <table width="900" height="150" border="1">
@@ -164,6 +167,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
             </th>
           </tr>
         </tbody></table>       
+
 ### song 7
 
 <table width="900" height="150" border="1">
@@ -190,6 +194,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
             </th>
           </tr>
         </tbody></table>           
+
 ### song 8
 
 <table width="900" height="150" border="1">
@@ -216,6 +221,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
             </th>
           </tr>
         </tbody></table>    
+
 ### song 9
 
 <table width="900" height="150" border="1">
@@ -242,6 +248,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
             </th>
           </tr>
         </tbody></table>    
+
 ### song 10
 
 <table width="900" height="150" border="1">
@@ -289,12 +296,93 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song1_sub1_recon_nr_new.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/melody1_P.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song1_sub2_recon_nr_new.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/melody1_I.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+        </tbody></table>
+
+### melody 2
+
+<table width="900" height="150" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody2.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody2_P.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody2_I.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+        </tbody></table>
+        
+### melody 3
+
+<table width="900" height="150" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody3.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody3_P.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody3_I.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+        </tbody></table>
+                
+### melody 4
+
+<table width="900" height="150" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody4.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody4_P.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody4_I.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
