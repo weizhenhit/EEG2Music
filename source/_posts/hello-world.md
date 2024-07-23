@@ -7,7 +7,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ### Create a new post
 
-<table width="600" height="200" border="1">
+<table width="900" height="200" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
