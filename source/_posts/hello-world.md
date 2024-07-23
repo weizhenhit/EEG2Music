@@ -305,17 +305,16 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
               </audio>
             </th>
           </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img melody1.jpg Original %} </th>
+            <th style="text-align: center"> {% asset_img melody1_P.jpg Perceived %} </th>
+            <th style="text-align: center"> {% asset_img melody1_I.jpg Imagined %} </th>
+          </tr>
         </tbody></table>
 
 ### melody 2
 
-{% asset_img melody2.jpg Original %}
-
-{% asset_img melody2_P.jpg Perceived %}
-
-{% asset_img melody2_I.jpg Imagined %}
-
-<table width="900" height="300" border="1">
+<table width="900" height="150" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
@@ -370,6 +369,11 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
               </audio>
             </th>
           </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img melody3.jpg Original %} </th>
+            <th style="text-align: center"> {% asset_img melody3_P.jpg Perceived %} </th>
+            <th style="text-align: center"> {% asset_img melody3_I.jpg Imagined %} </th>
+          </tr>
         </tbody></table>
                 
 ### melody 4
@@ -396,5 +400,10 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
                 <source src="/EEG2Music/pic/melody4_I.wav" type="audio/mpeg">
               </audio>
             </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img melody4.jpg Original %} </th>
+            <th style="text-align: center"> {% asset_img melody4_P.jpg Perceived %} </th>
+            <th style="text-align: center"> {% asset_img melody4_I.jpg Imagined %} </th>
           </tr>
         </tbody></table>
