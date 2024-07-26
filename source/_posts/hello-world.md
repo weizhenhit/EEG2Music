@@ -305,7 +305,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/melody1_I.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/melody1_I_en.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
@@ -337,7 +337,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/melody2_I.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/melody2_I_en.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
@@ -369,7 +369,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/melody3_I.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/melody3_I_en.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
