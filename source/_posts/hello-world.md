@@ -2,7 +2,7 @@
 title: Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks
 ---
 
-# Dataset 1: NMED-Tempo
+# Dataset 1: NMED-Tempo (Perceived music)
 
 ## EEG2Music
 
@@ -278,7 +278,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
           </tr>
         </tbody></table>    
         
-# Dataset 2: The music of silence (MOS)
+# Dataset 2: The music of silence (MOS) (Perceived and imagined music)
 
 ## EEG2Mel2Music
 
