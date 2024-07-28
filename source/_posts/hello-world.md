@@ -33,6 +33,11 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
               </audio>
             </th>
           </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img song1_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img song1_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img song1_2.png Recon2 %} </th>
+          </tr>
         </tbody></table>
 
 #### song 2
