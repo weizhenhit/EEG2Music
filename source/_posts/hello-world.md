@@ -6,7 +6,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 ### EEG2Music
 
-{% asset_img EEG2Music.png Imagined %}
+<!--{% asset_img EEG2Music.png Imagined %}-->
 
 #### song 1
 
@@ -282,7 +282,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 ### EEG2Mel2Music
 
-{% asset_img EEG2Mel2Music.png Imagined %}
+<!--{% asset_img EEG2Mel2Music.png Imagined %}-->
 
 #### melody 1
 
