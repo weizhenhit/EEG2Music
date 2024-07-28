@@ -10,7 +10,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 #### song 1
 
-<table width="800" height="120" border="1">
+<table width="800" height="125" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -37,7 +37,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 #### song 2
 
-<table width="800" height="120" border="1">
+<table width="800" height="125" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -64,7 +64,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 #### song 3
 
-<table width="800" height="120" border="1">
+<table width="800" height="125" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -91,7 +91,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
         
 #### song 4
 
-<table width="800" height="120" border="1">
+<table width="800" height="125" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -118,7 +118,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
         
 #### song 5
 
-<table width="800" height="120" border="1">
+<table width="800" height="125" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -145,7 +145,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 #### song 6
 
-<table width="800" height="120" border="1">
+<table width="800" height="125" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -172,7 +172,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 #### song 7
 
-<table width="800" height="120" border="1">
+<table width="800" height="125" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -199,7 +199,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 #### song 8
 
-<table width="800" height="120" border="1">
+<table width="800" height="125" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -226,7 +226,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 #### song 9
 
-<table width="800" height="120" border="1">
+<table width="800" height="125" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -253,7 +253,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 #### song 10
 
-<table width="800" height="120" border="1">
+<table width="800" height="125" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
