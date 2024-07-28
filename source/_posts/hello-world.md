@@ -10,7 +10,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 #### song 1
 
-<table width="800" height="125" border="1">
+<table width="800" height="400" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -42,7 +42,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 #### song 2
 
-<table width="800" height="125" border="1">
+<table width="800" height="400" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -65,11 +65,16 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
               </audio>
             </th>
           </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img song2_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img song2_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img song2_2.png Recon2 %} </th>
+          </tr>
         </tbody></table>
 
 #### song 3
 
-<table width="800" height="125" border="1">
+<table width="800" height="400" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -92,11 +97,16 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
               </audio>
             </th>
           </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img song3_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img song3_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img song3_2.png Recon2 %} </th>
+          </tr>
         </tbody></table>
         
 #### song 4
 
-<table width="800" height="125" border="1">
+<table width="800" height="400" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -119,11 +129,16 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
               </audio>
             </th>
           </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img song4_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img song4_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img song4_2.png Recon2 %} </th>
+          </tr>
         </tbody></table>
         
 #### song 5
 
-<table width="800" height="125" border="1">
+<table width="800" height="400" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -146,11 +161,16 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
               </audio>
             </th>
           </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img song5_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img song5_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img song5_2.png Recon2 %} </th>
+          </tr>
         </tbody></table>
 
 #### song 6
 
-<table width="800" height="125" border="1">
+<table width="800" height="400" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -173,11 +193,16 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
               </audio>
             </th>
           </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img song6_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img song6_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img song6_2.png Recon2 %} </th>
+          </tr>
         </tbody></table>       
 
 #### song 7
 
-<table width="800" height="125" border="1">
+<table width="800" height="400" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -200,11 +225,16 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
               </audio>
             </th>
           </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img song7_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img song7_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img song7_2.png Recon2 %} </th>
+          </tr>
         </tbody></table>           
 
 #### song 8
 
-<table width="800" height="125" border="1">
+<table width="800" height="400" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -227,11 +257,16 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
               </audio>
             </th>
           </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img song8_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img song8_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img song8_2.png Recon2 %} </th>
+          </tr>
         </tbody></table>    
 
 #### song 9
 
-<table width="800" height="125" border="1">
+<table width="800" height="400" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -254,11 +289,16 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
               </audio>
             </th>
           </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img song9_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img song9_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img song9_2.png Recon2 %} </th>
+          </tr>
         </tbody></table>    
 
 #### song 10
 
-<table width="800" height="125" border="1">
+<table width="800" height="400" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
             <th style="text-align: center">Reconstructed Music 1</th>
@@ -280,6 +320,11 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
                 <source src="/EEG2Music/pic/song10_sub2_recon_nr_new_en.wav" type="audio/mpeg">
               </audio>
             </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img song10_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img song10_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img song10_2.png Recon2 %} </th>
           </tr>
         </tbody></table>    
         
