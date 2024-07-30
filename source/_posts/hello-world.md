@@ -12,7 +12,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 ## Dataset 1: NMED-Tempo (Perceived music)
 
-*8The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open dataset of electrophysiological and behavioral responses collected from 20 participants who heard a set of 10 commercially available musical works. The EEG data were continuously recorded from 128 electrodes at a sampling rate of 1 kHz. We reconstruct perceived music from this dataset.**
+**The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open dataset of electrophysiological and behavioral responses collected from 20 participants who heard a set of 10 commercially available musical works. The EEG data were continuously recorded from 128 electrodes at a sampling rate of 1 kHz. We reconstruct perceived music from this dataset.**
 
 ### song 1
 
