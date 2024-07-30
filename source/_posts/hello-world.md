@@ -2,13 +2,11 @@
 title: Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks
 ---
 
-## Dataset 1: NMED-Tempo (Perceived music)
-
-### EEG2Music
-
 <!--{% asset_img EEG2Music.png Imagined %}-->
 
-#### song 1
+## Dataset 1: NMED-Tempo (Perceived music)
+
+### song 1
 
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
@@ -40,7 +38,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
           </tr>
         </tbody></table>
 
-#### song 2
+### song 2
 
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
@@ -72,7 +70,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
           </tr>
         </tbody></table>
 
-#### song 3
+### song 3
 
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
@@ -104,7 +102,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
           </tr>
         </tbody></table>
         
-#### song 4
+### song 4
 
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
@@ -136,7 +134,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
           </tr>
         </tbody></table>
         
-#### song 5
+### song 5
 
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
@@ -168,7 +166,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
           </tr>
         </tbody></table>
 
-#### song 6
+### song 6
 
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
@@ -200,7 +198,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
           </tr>
         </tbody></table>       
 
-#### song 7
+### song 7
 
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
@@ -232,7 +230,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
           </tr>
         </tbody></table>           
 
-#### song 8
+### song 8
 
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
@@ -264,7 +262,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
           </tr>
         </tbody></table>    
 
-#### song 9
+### song 9
 
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
@@ -296,7 +294,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
           </tr>
         </tbody></table>    
 
-#### song 10
+### song 10
 
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
@@ -330,11 +328,9 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
         
 ## Dataset 2: The music of silence (MOS) (Perceived and imagined music)
 
-### EEG2Mel2Music
-
 <!--{% asset_img EEG2Mel2Music.png Imagined %}-->
 
-#### melody 1
+### melody 1
 
 <table width="900" height="235" border="1">
           <tbody><tr class="table_title">
@@ -366,7 +362,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
           </tr>
         </tbody></table>
 
-#### melody 2
+### melody 2
 
 <table width="900" height="235" border="1">
           <tbody><tr class="table_title">
@@ -398,7 +394,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
           </tr>
         </tbody></table>
         
-#### melody 3
+### melody 3
 
 <table width="900" height="235" border="1">
           <tbody><tr class="table_title">
@@ -430,7 +426,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
           </tr>
         </tbody></table>
                 
-#### melody 4
+### melody 4
 
 <table width="900" height="235" border="1">
           <tbody><tr class="table_title">
