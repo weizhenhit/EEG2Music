@@ -12,7 +12,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 
 ## Dataset 1: NMED-Tempo (Perceived music)
 
-**The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open dataset of electrophysiological and behavioral responses collected from 20 participants who heard a set of 10 commercially available musical works. The EEG data were continuously recorded from 128 electrodes at a sampling rate of 1 kHz. We reconstruct perceived music from this dataset.**
+The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open dataset of electrophysiological and behavioral responses collected from 20 participants who heard a set of 10 commercially available musical works. The EEG data were continuously recorded from 128 electrodes at a sampling rate of 1 kHz. We reconstruct perceived music from this dataset.
 
 ### song 1
 
@@ -337,7 +337,7 @@ title: Reconstruction of perceived and imagined music from non-invasive EEG with
 ## Dataset 2: The music of silence (MOS) (Perceived and imagined music)
 
 <!--{% asset_img EEG2Mel2Music.png Imagined %}-->
-**The second dataset is from [1], which we call “The music of silence”, “MOS” for short. All 21 participants in this dataset were chosen to be very well-trained musicians. The experiment consisted of two conditions, listening and imagery. In the listening condition, participants were asked to passively listen to the four melodies from the corpus of Bach chorals while reading the musical score. For the imagery condition, they were asked to imagine the melodies in sync with the tactile metronome as precisely as they could. The provided preprocessed EEG data were down-sampled to 64 Hz and re-referenced to the average of all 64 channels. We reconstruct perceived and imagined music from this dataset.**
+The second dataset is from [1], which we call “The music of silence”, “MOS” for short. All 21 participants in this dataset were chosen to be very well-trained musicians. The experiment consisted of two conditions, listening and imagery. In the listening condition, participants were asked to passively listen to the four melodies from the corpus of Bach chorals while reading the musical score. For the imagery condition, they were asked to imagine the melodies in sync with the tactile metronome as precisely as they could. The provided preprocessed EEG data were down-sampled to 64 Hz and re-referenced to the average of all 64 channels. We reconstruct perceived and imagined music from this dataset.
 
 [1] G. Marion, G. M. D. Liberto, and S. A. Shamma, ‘The Music of Silence: Part I: Responses to Musical Imagery Encode Melodic Expectations and Acoustics’, J Neurosci, vol. 41, no. 35, pp. 7435–7448, Sep. 2021, doi: 10.1523/JNEUROSCI.0183-21.2021.
 
