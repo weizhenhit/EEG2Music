@@ -19,8 +19,8 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
-            <th style="text-align: center">Reconstructed Music 1</th>
-            <th style="text-align: center">Reconstructed Music 2</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
           </tr>
           <tr class="table_audio">
             <th style="text-align: center">
@@ -51,8 +51,8 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
-            <th style="text-align: center">Reconstructed Music 1</th>
-            <th style="text-align: center">Reconstructed Music 2</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
           </tr>
           <tr class="table_audio">
             <th style="text-align: center">
@@ -83,8 +83,8 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
-            <th style="text-align: center">Reconstructed Music 1</th>
-            <th style="text-align: center">Reconstructed Music 2</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
           </tr>
           <tr class="table_audio">
             <th style="text-align: center">
@@ -115,8 +115,8 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
-            <th style="text-align: center">Reconstructed Music 1</th>
-            <th style="text-align: center">Reconstructed Music 2</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
           </tr>
           <tr class="table_audio">
             <th style="text-align: center">
@@ -147,8 +147,8 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
-            <th style="text-align: center">Reconstructed Music 1</th>
-            <th style="text-align: center">Reconstructed Music 2</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
           </tr>
           <tr class="table_audio">
             <th style="text-align: center">
@@ -179,8 +179,8 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
-            <th style="text-align: center">Reconstructed Music 1</th>
-            <th style="text-align: center">Reconstructed Music 2</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
           </tr>
           <tr class="table_audio">
             <th style="text-align: center">
@@ -211,8 +211,8 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
-            <th style="text-align: center">Reconstructed Music 1</th>
-            <th style="text-align: center">Reconstructed Music 2</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
           </tr>
           <tr class="table_audio">
             <th style="text-align: center">
@@ -243,8 +243,8 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
-            <th style="text-align: center">Reconstructed Music 1</th>
-            <th style="text-align: center">Reconstructed Music 2</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
           </tr>
           <tr class="table_audio">
             <th style="text-align: center">
@@ -275,8 +275,8 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
-            <th style="text-align: center">Reconstructed Music 1</th>
-            <th style="text-align: center">Reconstructed Music 2</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
           </tr>
           <tr class="table_audio">
             <th style="text-align: center">
@@ -307,8 +307,8 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
 <table width="800" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Music</th>
-            <th style="text-align: center">Reconstructed Music 1</th>
-            <th style="text-align: center">Reconstructed Music 2</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
           </tr>
           <tr class="table_audio">
             <th style="text-align: center">
