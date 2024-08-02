@@ -2,7 +2,7 @@
 title: Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks
 ---
 
-<!--{% asset_img EEG2Music.png Imagined %}-->
+{% asset_img EEG2Music_e2e.png Imagined %}
 
 **Reconstructing auditory stimulus from human neural signals is an emerging and challenging direction in the brain-computer interface (BCI) field. In this paper, we propose an end-to-end deep learning decoding strategy based on generative adversarial networks (GANs) to reconstruct perceived and imagined music from noninvasive EEG signals. The input of our generator is the pre-processed EEG signal without additional feature extraction steps. The generator’s output is the raw musical waveforms, without the need to use a vocoder or Griffi-Lim algorithm to synthesize music from mel-spectrogram.**
 
