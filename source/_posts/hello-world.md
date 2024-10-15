@@ -355,12 +355,12 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
           <tr class="table_audio">
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/melody1.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/melody1_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/melody1_P.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/melody1_P_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
@@ -370,12 +370,44 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
             </th>
           </tr>
           <tr class="table_title">
-            <th style="text-align: center"> {% asset_img melody1.jpg Original %} </th>
-            <th style="text-align: center"> {% asset_img melody1_P.jpg Perceived %} </th>
-            <th style="text-align: center"> {% asset_img melody1_I.jpg Imagined %} </th>
+            <th style="text-align: center"> {% asset_img 1_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 1_1.png Perceived %} </th>
+            <th style="text-align: center"> {% asset_img 1_2.png Imagined %} </th>
           </tr>
         </tbody></table>
 
+### melody 1 (unseen)
+
+<table width="900" height="235" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody1_unseen_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody1_P_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody1_I_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img 1_0_un.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 1_1_un.png Perceived %} </th>
+            <th style="text-align: center"> {% asset_img 1_2_un.png Imagined %} </th>
+          </tr>
+        </tbody></table>
+        
 ### melody 2
 
 <table width="900" height="235" border="1">
@@ -387,7 +419,7 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
           <tr class="table_audio">
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/melody2.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/melody2_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
@@ -402,9 +434,41 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
             </th>
           </tr>
           <tr class="table_title">
-            <th style="text-align: center"> {% asset_img melody2.jpg Original %} </th>
-            <th style="text-align: center"> {% asset_img melody2_P.jpg Perceived %} </th>
-            <th style="text-align: center"> {% asset_img melody2_I.jpg Imagined %} </th>
+            <th style="text-align: center"> {% asset_img 2_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 2_1.png Perceived %} </th>
+            <th style="text-align: center"> {% asset_img 2_2.png Imagined %} </th>
+          </tr>
+        </tbody></table>
+
+### melody 2 (unseen)
+
+<table width="900" height="235" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody2_unseen_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody2_P_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody2_I_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img 2_0_un.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 2_1_un.png Perceived %} </th>
+            <th style="text-align: center"> {% asset_img 2_2_un.png Imagined %} </th>
           </tr>
         </tbody></table>
         
@@ -419,12 +483,12 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
           <tr class="table_audio">
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/melody3.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/melody3_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/melody3_P.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/melody3_P_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
@@ -434,9 +498,41 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
             </th>
           </tr>
           <tr class="table_title">
-            <th style="text-align: center"> {% asset_img melody3.jpg Original %} </th>
-            <th style="text-align: center"> {% asset_img melody3_P.jpg Perceived %} </th>
-            <th style="text-align: center"> {% asset_img melody3_I.jpg Imagined %} </th>
+            <th style="text-align: center"> {% asset_img 3_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 3_1.png Perceived %} </th>
+            <th style="text-align: center"> {% asset_img 3_2.png Imagined %} </th>
+          </tr>
+        </tbody></table>
+
+### melody 3 (unseen)
+
+<table width="900" height="235" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody3_unseen_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody3_P_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody3_I_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img 3_0_un.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 3_1_un.png Perceived %} </th>
+            <th style="text-align: center"> {% asset_img 3_2_un.png Imagined %} </th>
           </tr>
         </tbody></table>
                 
@@ -451,7 +547,7 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
           <tr class="table_audio">
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/melody4.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/melody4_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
@@ -461,13 +557,45 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/melody4_I.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/melody4_I_en.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
           <tr class="table_title">
-            <th style="text-align: center"> {% asset_img melody4.jpg Original %} </th>
-            <th style="text-align: center"> {% asset_img melody4_P.jpg Perceived %} </th>
-            <th style="text-align: center"> {% asset_img melody4_I.jpg Imagined %} </th>
+            <th style="text-align: center"> {% asset_img 4_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 4_1.png Perceived %} </th>
+            <th style="text-align: center"> {% asset_img 4_2.png Imagined %} </th>
+          </tr>
+        </tbody></table>
+
+### melody 4 (unseen)
+
+<table width="900" height="235" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody4_unseen_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody4_P_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody4_I_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img 4_0_un.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 4_1_un.png Perceived %} </th>
+            <th style="text-align: center"> {% asset_img 4_2_un.png Imagined %} </th>
           </tr>
         </tbody></table>
