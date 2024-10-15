@@ -33,12 +33,12 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song1_sub1_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song1_sub1_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song1_sub2_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song1_sub2_en.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
@@ -65,12 +65,12 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song2_sub1_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song2_sub1_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song2_sub2_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song2_sub2_en.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
@@ -97,12 +97,12 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song3_sub1_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song3_sub1_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song3_sub2_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song3_sub2_en.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
@@ -129,12 +129,12 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song4_sub1_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song4_sub1_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song4_sub2_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song4_sub2_en.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
@@ -161,12 +161,12 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song5_sub1_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song5_sub1_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song5_sub2_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song5_sub2_en.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
@@ -193,12 +193,12 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song6_sub1_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song6_sub1_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song6_sub2_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song6_sub2_en.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
@@ -225,12 +225,12 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song7_sub1_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song7_sub1_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song7_sub2_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song7_sub2_en.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
@@ -257,12 +257,12 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song8_sub1_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song8_sub1_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song8_sub2_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song8_sub2_en.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
@@ -289,12 +289,12 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song9_sub1_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song9_sub1_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song9_sub2_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song9_sub2_en.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
