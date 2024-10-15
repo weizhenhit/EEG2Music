@@ -321,12 +321,12 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song10_sub1_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song10_sub1_en.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song10_sub2_recon_nr_new_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song10_sub2_en.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
@@ -334,6 +334,36 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
             <th style="text-align: center"> {% asset_img song10_0.png Original %} </th>
             <th style="text-align: center"> {% asset_img song10_1.png Recon1 %} </th>
             <th style="text-align: center"> {% asset_img song10_2.png Recon2 %} </th>
+          </tr>
+        </tbody></table>    
+
+<table width="800" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Reconstructed Music (Participant 3)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 4)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 5)</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song10_sub3_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song10_sub4_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song10_sub5_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> {% asset_img song10_3.png Recon3 %} </th>
+            <th style="text-align: center"> {% asset_img song10_4.png Recon4 %} </th>
+            <th style="text-align: center"> {% asset_img song10_5.png Recon5 %} </th>
           </tr>
         </tbody></table>    
         
