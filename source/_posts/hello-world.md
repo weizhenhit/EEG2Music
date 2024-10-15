@@ -346,7 +346,7 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
 
 ### melody 1
 
-<table width="900" height="235" border="1">
+<table width="900" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
@@ -378,7 +378,7 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
 
 ### melody 1 (unseen)
 
-<table width="900" height="235" border="1">
+<table width="900" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
@@ -410,7 +410,7 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
         
 ### melody 2
 
-<table width="900" height="235" border="1">
+<table width="900" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
@@ -442,7 +442,7 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
 
 ### melody 2 (unseen)
 
-<table width="900" height="235" border="1">
+<table width="900" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
@@ -474,7 +474,7 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
         
 ### melody 3
 
-<table width="900" height="235" border="1">
+<table width="900" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
@@ -506,7 +506,7 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
 
 ### melody 3 (unseen)
 
-<table width="900" height="235" border="1">
+<table width="900" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
@@ -538,7 +538,7 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
                 
 ### melody 4
 
-<table width="900" height="235" border="1">
+<table width="900" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
@@ -570,7 +570,7 @@ The second dataset is from [1], which we call “The music of silence”, “MOS
 
 ### melody 4 (unseen)
 
-<table width="900" height="235" border="1">
+<table width="900" height="300" border="1">
           <tbody><tr class="table_title">
             <th style="text-align: center">Original Melody</th>
             <th style="text-align: center">Reconstructed Perceived Melody</th>
