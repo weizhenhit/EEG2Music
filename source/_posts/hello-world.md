@@ -367,7 +367,7 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
           </tr>
         </tbody></table>    
         
-## Dataset 2: The music of silence (MOS) (Perceived and imagined music)
+<!-- ## Dataset 2: The music of silence (MOS) (Perceived and imagined music) -->
 
 <!--{% asset_img EEG2Mel2Music.png Imagined %}-->
 The second dataset is from [1], which we call “The music of silence”, “MOS” for short. All 21 participants in this dataset were chosen to be very well-trained musicians. The experiment consisted of two conditions, listening and imagery. In the listening condition, participants were asked to passively listen to the four melodies from the corpus of Bach chorals while reading the musical score. For the imagery condition, they were asked to imagine the melodies in sync with the tactile metronome as precisely as they could. The provided preprocessed EEG data were down-sampled to 64 Hz and re-referenced to the average of all 64 channels. We reconstruct perceived and imagined music from this dataset.
