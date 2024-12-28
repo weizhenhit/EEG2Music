@@ -1,5 +1,5 @@
 ---
-title: Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks
+title: Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)
 ---
 
 {% asset_img EEG2Wav.png Imagined %}
