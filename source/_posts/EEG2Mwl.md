@@ -1,17 +1,8 @@
 ---
-title: Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks
+title: Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Mel-GAN)
 ---
 
-{% asset_img EEG2Wav.png Imagined %}
-
-**Reconstructing auditory stimulus from human neural signals is an emerging and challenging direction in the brain-computer interface (BCI) field. In this paper, we propose an end-to-end deep learning decoding strategy based on generative adversarial networks (GANs) to reconstruct perceived and imagined music from noninvasive EEG signals. The input of our generator is the pre-processed EEG signals without additional feature extraction steps. The generator’s output is the raw musical waveforms, without the need to use a vocoder or Griffi-Lim algorithm to synthesize music from mel-spectrogram.**
-
-**We evaluated the reconstruction performance on two public EEG datasets. The reconstruction results showed that the proposed reconstruction strategy had great performance on several subjective and objective quality assessments, and the reconstructed music has good audio quality. The successful reconstruction of unseen imagined songs and the cross-subject results further demonstrated the strong generalization ability of the proposed model, which might indicate the potential of decoding new songs from new subjects, for example, a patient who lost the ability to music expression due to brain injury.**
-
-**In addition, the proposed reconstruction strategy can be easily transplanted into the speech brain-computer interface scenario, to help patients regain the ability of language and music expression, and even communicate like normal people with natural speed and unlimited vocabulary, which has great significance for neuroscience research and clinical treatment.**
-
-**In summary, our results shed new light on reconstructing high-quality auditory stimulus from noninvasive EEG signals and prove the powerful potential of generative models in bridging BCI and AI.**
-
+{% asset_img EEG2Mel.png Imagined %}
 
 ## Dataset 1: NMED-Tempo (Perceived music)
 
@@ -28,24 +19,24 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
           <tr class="table_audio">
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song1.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song1_1.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song1_sub1_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song1_sub1_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song1_sub2_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/ssong1_sub2_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
           <tr class="table_title">
-            <th style="text-align: center"> {% asset_img song1_0.png Original %} </th>
-            <th style="text-align: center"> {% asset_img song1_1.png Recon1 %} </th>
-            <th style="text-align: center"> {% asset_img song1_2.png Recon2 %} </th>
+            <th style="text-align: center"> {% asset_img 1_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 1_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img 1_2.png Recon2 %} </th>
           </tr>
         </tbody></table>
 
@@ -60,24 +51,24 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
           <tr class="table_audio">
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song2.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song2_1.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song2_sub1_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song2_sub1_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song2_sub2_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song2_sub2_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
           <tr class="table_title">
-            <th style="text-align: center"> {% asset_img song2_0.png Original %} </th>
-            <th style="text-align: center"> {% asset_img song2_1.png Recon1 %} </th>
-            <th style="text-align: center"> {% asset_img song2_2.png Recon2 %} </th>
+            <th style="text-align: center"> {% asset_img 2_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 2_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img 2_2.png Recon2 %} </th>
           </tr>
         </tbody></table>
 
@@ -92,24 +83,24 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
           <tr class="table_audio">
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song3.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song3_1.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song3_sub1_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song3_sub1_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song3_sub2_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song3_sub2_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
           <tr class="table_title">
-            <th style="text-align: center"> {% asset_img song3_0.png Original %} </th>
-            <th style="text-align: center"> {% asset_img song3_1.png Recon1 %} </th>
-            <th style="text-align: center"> {% asset_img song3_2.png Recon2 %} </th>
+            <th style="text-align: center"> {% asset_img 3_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 3_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img 3_2.png Recon2 %} </th>
           </tr>
         </tbody></table>
         
@@ -124,24 +115,24 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
           <tr class="table_audio">
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song4.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song4_1.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song4_sub1_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song4_sub1_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song4_sub2_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song4_sub2_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
           <tr class="table_title">
-            <th style="text-align: center"> {% asset_img song4_0.png Original %} </th>
-            <th style="text-align: center"> {% asset_img song4_1.png Recon1 %} </th>
-            <th style="text-align: center"> {% asset_img song4_2.png Recon2 %} </th>
+            <th style="text-align: center"> {% asset_img 4_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 4_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img 4_2.png Recon2 %} </th>
           </tr>
         </tbody></table>
         
@@ -156,24 +147,24 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
           <tr class="table_audio">
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song5.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song5_1.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song5_sub1_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song5_sub1_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song5_sub2_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song5_sub2_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
           <tr class="table_title">
-            <th style="text-align: center"> {% asset_img song5_0.png Original %} </th>
-            <th style="text-align: center"> {% asset_img song5_1.png Recon1 %} </th>
-            <th style="text-align: center"> {% asset_img song5_2.png Recon2 %} </th>
+            <th style="text-align: center"> {% asset_img 5_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 5_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img 5_2.png Recon2 %} </th>
           </tr>
         </tbody></table>
 
@@ -188,24 +179,24 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
           <tr class="table_audio">
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song6.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song6_1.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song6_sub1_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song6_sub1_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song6_sub2_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song6_sub2_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
           <tr class="table_title">
-            <th style="text-align: center"> {% asset_img song6_0.png Original %} </th>
-            <th style="text-align: center"> {% asset_img song6_1.png Recon1 %} </th>
-            <th style="text-align: center"> {% asset_img song6_2.png Recon2 %} </th>
+            <th style="text-align: center"> {% asset_img 6_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 6_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img 6_2.png Recon2 %} </th>
           </tr>
         </tbody></table>       
 
@@ -220,24 +211,24 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
           <tr class="table_audio">
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song7.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song7_1.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song7_sub1_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song7_sub1_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song7_sub2_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song7_sub2_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
           <tr class="table_title">
-            <th style="text-align: center"> {% asset_img song7_0.png Original %} </th>
-            <th style="text-align: center"> {% asset_img song7_1.png Recon1 %} </th>
-            <th style="text-align: center"> {% asset_img song7_2.png Recon2 %} </th>
+            <th style="text-align: center"> {% asset_img 7_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 7_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img 7_2.png Recon2 %} </th>
           </tr>
         </tbody></table>           
 
@@ -252,24 +243,24 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
           <tr class="table_audio">
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song8.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song8_1.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song8_sub1_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song8_sub1_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song8_sub2_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song8_sub2_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
           <tr class="table_title">
-            <th style="text-align: center"> {% asset_img song8_0.png Original %} </th>
-            <th style="text-align: center"> {% asset_img song8_1.png Recon1 %} </th>
-            <th style="text-align: center"> {% asset_img song8_2.png Recon2 %} </th>
+            <th style="text-align: center"> {% asset_img 8_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 8_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img 8_2.png Recon2 %} </th>
           </tr>
         </tbody></table>    
 
@@ -284,24 +275,24 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
           <tr class="table_audio">
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song9.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song9_1.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song9_sub1_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song9_sub1_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song9_sub2_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song9_sub2_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
           <tr class="table_title">
-            <th style="text-align: center"> {% asset_img song9_0.png Original %} </th>
-            <th style="text-align: center"> {% asset_img song9_1.png Recon1 %} </th>
-            <th style="text-align: center"> {% asset_img song9_2.png Recon2 %} </th>
+            <th style="text-align: center"> {% asset_img 9_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 9_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img 9_2.png Recon2 %} </th>
           </tr>
         </tbody></table>    
 
@@ -316,24 +307,24 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
           <tr class="table_audio">
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song10.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song10_1.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song10_sub1_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song10_sub3_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song10_sub2_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song10_sub6_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
           <tr class="table_title">
-            <th style="text-align: center"> {% asset_img song10_0.png Original %} </th>
-            <th style="text-align: center"> {% asset_img song10_1.png Recon1 %} </th>
-            <th style="text-align: center"> {% asset_img song10_2.png Recon2 %} </th>
+            <th style="text-align: center"> {% asset_img 10_0.png Original %} </th>
+            <th style="text-align: center"> {% asset_img 10_1.png Recon1 %} </th>
+            <th style="text-align: center"> {% asset_img 10_2.png Recon2 %} </th>
           </tr>
         </tbody></table>    
 
@@ -346,24 +337,24 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
           <tr class="table_audio">
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song10_sub3_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song10_sub7_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song10_sub4_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song10_sub19_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song10_sub5_en.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song10_sub20_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
           <tr class="table_title">
-            <th style="text-align: center"> {% asset_img song10_3.png Recon3 %} </th>
-            <th style="text-align: center"> {% asset_img song10_4.png Recon4 %} </th>
-            <th style="text-align: center"> {% asset_img song10_5.png Recon5 %} </th>
+            <th style="text-align: center"> {% asset_img 10_3.png Recon3 %} </th>
+            <th style="text-align: center"> {% asset_img 10_4.png Recon4 %} </th>
+            <th style="text-align: center"> {% asset_img 10_5.png Recon5 %} </th>
           </tr>
         </tbody></table>    
         
