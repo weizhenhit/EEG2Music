@@ -29,7 +29,7 @@ The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open da
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/ssong1_sub2_t0_recon.wav" type="audio/mpeg">
+                <source src="/EEG2Music/pic/song1_sub2_t0_recon.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
