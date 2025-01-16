@@ -1,3 +1,7 @@
+---
+title: Imagined Music from BINE (EEG2Wav-GAN)
+---
+
 ## Dataset 3: Imagined Music 
 
 ### song 1
