@@ -85,7 +85,7 @@
             </th>
             <th style="text-align: center">
               <audio controls>
-                <source src="/EEG2Music/pic/song3_sub2_recon_snr2.wav type="audio/mpeg">
+                <source src="/EEG2Music/pic/song3_sub2_recon_snr2.wav" type="audio/mpeg">
               </audio>
             </th>
           </tr>
