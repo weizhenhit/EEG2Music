@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Reconstructing auditory stimulus from human neural signals is an emerging and challenging direction in the brain-computer interface (BCI) field. In this paper, we propose an end-to-end deep learning">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)">
+<meta property="og:url" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/index.html">
+<meta property="og:site_name" content="EEG2Music">
+<meta property="og:description" content="Reconstructing auditory stimulus from human neural signals is an emerging and challenging direction in the brain-computer interface (BCI) field. In this paper, we propose an end-to-end deep learning">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/EEG2Wav.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song1_0.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song1_1.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song1_2.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song2_0.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song2_1.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song2_2.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song3_0.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song3_1.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song3_2.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song4_0.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song4_1.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song4_2.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song5_0.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song5_1.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song5_2.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song6_0.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song6_1.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song6_2.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song7_0.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song7_1.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song7_2.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song8_0.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song8_1.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song8_2.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song9_0.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song9_1.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song9_2.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song10_0.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song10_1.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song10_2.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song10_3.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song10_4.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/song10_5.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/1_0.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/1_1.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/1_2.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/1_0_un.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/1_1_un.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/1_2_un.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/2_0.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/2_1.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/2_2.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/2_0_un.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/2_1_un.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/2_2_un.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/3_0.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/3_1.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/3_2.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/3_0_un.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/3_1_un.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/3_2_un.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/4_0.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/4_1.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/4_2.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/4_0_un.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/4_1_un.png">
+<meta property="og:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/4_2_un.png">
+<meta property="article:published_time" content="2025-01-16T14:45:19.983Z">
+<meta property="article:modified_time" content="2025-01-16T14:45:19.983Z">
+<meta property="article:author" content="WeiZhen">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/EEG2Wav.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/EEG2Music/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/EEG2Music/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/EEG2Music/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/EEG2Music/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/EEG2Music/">Home</a></li><!--
+     --><!--
+       --><li><a href="/EEG2Music/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/EEG2Music/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="https://weizhenhit.github.io/EEG2Music/">Projects</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/EEG2Music/2025/01/16/LabData/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&text=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&title=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&is_video=false&description=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)&body=Check out this article: https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&title=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&title=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&title=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&title=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&name=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&t=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Dataset-1-NMED-Tempo-Perceived-music"><span class="toc-number">1.</span> <span class="toc-text">Dataset 1: NMED-Tempo (Perceived music)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#song-1"><span class="toc-number">1.1.</span> <span class="toc-text">song 1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-2"><span class="toc-number">1.2.</span> <span class="toc-text">song 2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-3"><span class="toc-number">1.3.</span> <span class="toc-text">song 3</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-4"><span class="toc-number">1.4.</span> <span class="toc-text">song 4</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-5"><span class="toc-number">1.5.</span> <span class="toc-text">song 5</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-6"><span class="toc-number">1.6.</span> <span class="toc-text">song 6</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-7"><span class="toc-number">1.7.</span> <span class="toc-text">song 7</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-8"><span class="toc-number">1.8.</span> <span class="toc-text">song 8</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-9"><span class="toc-number">1.9.</span> <span class="toc-text">song 9</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-10-unseen-song"><span class="toc-number">1.10.</span> <span class="toc-text">song 10 (unseen song)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Dataset-2-The-music-of-silence-MOS-Perceived-and-imagined-music"><span class="toc-number">2.</span> <span class="toc-text">Dataset 2: The music of silence (MOS) (Perceived and imagined music)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-1"><span class="toc-number">2.1.</span> <span class="toc-text">melody 1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-1-unseen"><span class="toc-number">2.2.</span> <span class="toc-text">melody 1 (unseen)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-2"><span class="toc-number">2.3.</span> <span class="toc-text">melody 2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-2-unseen"><span class="toc-number">2.4.</span> <span class="toc-text">melody 2 (unseen)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-3"><span class="toc-number">2.5.</span> <span class="toc-text">melody 3</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-3-unseen"><span class="toc-number">2.6.</span> <span class="toc-text">melody 3 (unseen)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-4"><span class="toc-number">2.7.</span> <span class="toc-text">melody 4</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-4-unseen"><span class="toc-number">2.8.</span> <span class="toc-text">melody 4 (unseen)</span></a></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">WeiZhen</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2025-01-16T14:45:19.983Z" class="dt-published" itemprop="datePublished">2025-01-16</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <img src="/EEG2Music/2025/01/16/hello-world/EEG2Wav.png" class="" title="Imagined">
+
+<p><strong>Reconstructing auditory stimulus from human neural signals is an emerging and challenging direction in the brain-computer interface (BCI) field. In this paper, we propose an end-to-end deep learning decoding strategy based on generative adversarial networks (GANs) to reconstruct perceived and imagined music from noninvasive EEG signals. The input of our generator is the pre-processed EEG signals without additional feature extraction steps. The generator’s output is the raw musical waveforms, without the need to use a vocoder or Griffi-Lim algorithm to synthesize music from mel-spectrogram.</strong></p>
+<p><strong>We evaluated the reconstruction performance on two public EEG datasets. The reconstruction results showed that the proposed reconstruction strategy had great performance on several subjective and objective quality assessments, and the reconstructed music has good audio quality. The successful reconstruction of unseen imagined songs and the cross-subject results further demonstrated the strong generalization ability of the proposed model, which might indicate the potential of decoding new songs from new subjects, for example, a patient who lost the ability to music expression due to brain injury.</strong></p>
+<p><strong>In addition, the proposed reconstruction strategy can be easily transplanted into the speech brain-computer interface scenario, to help patients regain the ability of language and music expression, and even communicate like normal people with natural speed and unlimited vocabulary, which has great significance for neuroscience research and clinical treatment.</strong></p>
+<p><strong>In summary, our results shed new light on reconstructing high-quality auditory stimulus from noninvasive EEG signals and prove the powerful potential of generative models in bridging BCI and AI.</strong></p>
+<h2 id="Dataset-1-NMED-Tempo-Perceived-music"><a href="#Dataset-1-NMED-Tempo-Perceived-music" class="headerlink" title="Dataset 1: NMED-Tempo (Perceived music)"></a>Dataset 1: NMED-Tempo (Perceived music)</h2><p>The first dataset is Naturalistic Music EEG Dataset—Tempo (NMED-T), an open dataset of electrophysiological and behavioral responses collected from 20 participants who heard a set of 10 commercially available musical works. The EEG data were continuously recorded from 128 electrodes at a sampling rate of 1 kHz. We reconstruct perceived music from this dataset.</p>
+<h3 id="song-1"><a href="#song-1" class="headerlink" title="song 1"></a>song 1</h3><table width="800" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song1.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song1_sub1_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song1_sub2_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song1_0.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song1_1.png" class="" title="Recon1"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song1_2.png" class="" title="Recon2"> </th>
+          </tr>
+        </tbody></table>
+
+<h3 id="song-2"><a href="#song-2" class="headerlink" title="song 2"></a>song 2</h3><table width="800" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song2.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song2_sub1_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song2_sub2_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song2_0.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song2_1.png" class="" title="Recon1"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song2_2.png" class="" title="Recon2"> </th>
+          </tr>
+        </tbody></table>
+
+<h3 id="song-3"><a href="#song-3" class="headerlink" title="song 3"></a>song 3</h3><table width="800" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song3.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song3_sub1_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song3_sub2_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song3_0.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song3_1.png" class="" title="Recon1"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song3_2.png" class="" title="Recon2"> </th>
+          </tr>
+        </tbody></table>
+        
+<h3 id="song-4"><a href="#song-4" class="headerlink" title="song 4"></a>song 4</h3><table width="800" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song4.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song4_sub1_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song4_sub2_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song4_0.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song4_1.png" class="" title="Recon1"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song4_2.png" class="" title="Recon2"> </th>
+          </tr>
+        </tbody></table>
+        
+<h3 id="song-5"><a href="#song-5" class="headerlink" title="song 5"></a>song 5</h3><table width="800" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song5.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song5_sub1_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song5_sub2_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song5_0.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song5_1.png" class="" title="Recon1"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song5_2.png" class="" title="Recon2"> </th>
+          </tr>
+        </tbody></table>
+
+<h3 id="song-6"><a href="#song-6" class="headerlink" title="song 6"></a>song 6</h3><table width="800" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song6.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song6_sub1_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song6_sub2_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song6_0.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song6_1.png" class="" title="Recon1"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song6_2.png" class="" title="Recon2"> </th>
+          </tr>
+        </tbody></table>       
+
+<h3 id="song-7"><a href="#song-7" class="headerlink" title="song 7"></a>song 7</h3><table width="800" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song7.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song7_sub1_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song7_sub2_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song7_0.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song7_1.png" class="" title="Recon1"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song7_2.png" class="" title="Recon2"> </th>
+          </tr>
+        </tbody></table>           
+
+<h3 id="song-8"><a href="#song-8" class="headerlink" title="song 8"></a>song 8</h3><table width="800" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song8.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song8_sub1_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song8_sub2_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song8_0.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song8_1.png" class="" title="Recon1"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song8_2.png" class="" title="Recon2"> </th>
+          </tr>
+        </tbody></table>    
+
+<h3 id="song-9"><a href="#song-9" class="headerlink" title="song 9"></a>song 9</h3><table width="800" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song9.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song9_sub1_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song9_sub2_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song9_0.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song9_1.png" class="" title="Recon1"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song9_2.png" class="" title="Recon2"> </th>
+          </tr>
+        </tbody></table>    
+
+<h3 id="song-10-unseen-song"><a href="#song-10-unseen-song" class="headerlink" title="song 10 (unseen song)"></a>song 10 (unseen song)</h3><table width="800" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Music</th>
+            <th style="text-align: center">Reconstructed Music (Participant 1)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 2)</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song10.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song10_sub1_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song10_sub2_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song10_0.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song10_1.png" class="" title="Recon1"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song10_2.png" class="" title="Recon2"> </th>
+          </tr>
+        </tbody></table>    
+
+<table width="800" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Reconstructed Music (Participant 3)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 4)</th>
+            <th style="text-align: center">Reconstructed Music (Participant 5)</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song10_sub3_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song10_sub4_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/song10_sub5_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song10_3.png" class="" title="Recon3"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song10_4.png" class="" title="Recon4"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/song10_5.png" class="" title="Recon5"> </th>
+          </tr>
+        </tbody></table>    
+        
+<h2 id="Dataset-2-The-music-of-silence-MOS-Perceived-and-imagined-music"><a href="#Dataset-2-The-music-of-silence-MOS-Perceived-and-imagined-music" class="headerlink" title="Dataset 2: The music of silence (MOS) (Perceived and imagined music)"></a>Dataset 2: The music of silence (MOS) (Perceived and imagined music)</h2><!---->
+<p>The second dataset is from [1], which we call “The music of silence”, “MOS” for short. All 21 participants in this dataset were chosen to be very well-trained musicians. The experiment consisted of two conditions, listening and imagery. In the listening condition, participants were asked to passively listen to the four melodies from the corpus of Bach chorals while reading the musical score. For the imagery condition, they were asked to imagine the melodies in sync with the tactile metronome as precisely as they could. The provided preprocessed EEG data were down-sampled to 64 Hz and re-referenced to the average of all 64 channels. We reconstruct perceived and imagined music from this dataset.</p>
+<p>[1] G. Marion, G. M. D. Liberto, and S. A. Shamma, ‘The Music of Silence: Part I: Responses to Musical Imagery Encode Melodic Expectations and Acoustics’, J Neurosci, vol. 41, no. 35, pp. 7435–7448, Sep. 2021, doi: 10.1523&#x2F;JNEUROSCI.0183-21.2021.</p>
+<h3 id="melody-1"><a href="#melody-1" class="headerlink" title="melody 1"></a>melody 1</h3><table width="900" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody1_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody1_P_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody1_I_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/1_0.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/1_1.png" class="" title="Perceived"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/1_2.png" class="" title="Imagined"> </th>
+          </tr>
+        </tbody></table>
+
+<h3 id="melody-1-unseen"><a href="#melody-1-unseen" class="headerlink" title="melody 1 (unseen)"></a>melody 1 (unseen)</h3><table width="900" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody1_unseen_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody1_P_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody1_I_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/1_0_un.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/1_1_un.png" class="" title="Perceived"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/1_2_un.png" class="" title="Imagined"> </th>
+          </tr>
+        </tbody></table>
+        
+<h3 id="melody-2"><a href="#melody-2" class="headerlink" title="melody 2"></a>melody 2</h3><table width="900" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody2_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody2_P_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody2_I_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/2_0.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/2_1.png" class="" title="Perceived"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/2_2.png" class="" title="Imagined"> </th>
+          </tr>
+        </tbody></table>
+
+<h3 id="melody-2-unseen"><a href="#melody-2-unseen" class="headerlink" title="melody 2 (unseen)"></a>melody 2 (unseen)</h3><table width="900" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody2_unseen_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody2_P_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody2_I_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/2_0_un.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/2_1_un.png" class="" title="Perceived"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/2_2_un.png" class="" title="Imagined"> </th>
+          </tr>
+        </tbody></table>
+        
+<h3 id="melody-3"><a href="#melody-3" class="headerlink" title="melody 3"></a>melody 3</h3><table width="900" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody3_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody3_P_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody3_I_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/3_0.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/3_1.png" class="" title="Perceived"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/3_2.png" class="" title="Imagined"> </th>
+          </tr>
+        </tbody></table>
+
+<h3 id="melody-3-unseen"><a href="#melody-3-unseen" class="headerlink" title="melody 3 (unseen)"></a>melody 3 (unseen)</h3><table width="900" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody3_unseen_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody3_P_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody3_I_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/3_0_un.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/3_1_un.png" class="" title="Perceived"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/3_2_un.png" class="" title="Imagined"> </th>
+          </tr>
+        </tbody></table>
+                
+<h3 id="melody-4"><a href="#melody-4" class="headerlink" title="melody 4"></a>melody 4</h3><table width="900" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody4_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody4_P_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody4_I_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/4_0.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/4_1.png" class="" title="Perceived"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/4_2.png" class="" title="Imagined"> </th>
+          </tr>
+        </tbody></table>
+
+<h3 id="melody-4-unseen"><a href="#melody-4-unseen" class="headerlink" title="melody 4 (unseen)"></a>melody 4 (unseen)</h3><table width="900" height="300" border="1">
+          <tbody><tr class="table_title">
+            <th style="text-align: center">Original Melody</th>
+            <th style="text-align: center">Reconstructed Perceived Melody</th>
+            <th style="text-align: center">Reconstructed Imagined Melody</th>
+          </tr>
+          <tr class="table_audio">
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody4_unseen_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody4_P_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+            <th style="text-align: center">
+              <audio controls>
+                <source src="/EEG2Music/pic/melody4_I_un_en.wav" type="audio/mpeg">
+              </audio>
+            </th>
+          </tr>
+          <tr class="table_title">
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/4_0_un.png" class="" title="Original"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/4_1_un.png" class="" title="Perceived"> </th>
+            <th style="text-align: center"> <img src="/EEG2Music/2025/01/16/hello-world/4_2_un.png" class="" title="Imagined"> </th>
+          </tr>
+        </tbody></table>
+
+  </div>
+  <div>
+    <a href="https://github.com/weizhenhit/EEG2Music/edit/master/source/_posts/hello-world.md" target="_blank"> </a>
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/EEG2Music/">Home</a></li>
+        
+          <li><a href="/EEG2Music/about/">About</a></li>
+        
+          <li><a href="/EEG2Music/archives/">Writing</a></li>
+        
+          <li><a href="https://weizhenhit.github.io/EEG2Music/">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Dataset-1-NMED-Tempo-Perceived-music"><span class="toc-number">1.</span> <span class="toc-text">Dataset 1: NMED-Tempo (Perceived music)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#song-1"><span class="toc-number">1.1.</span> <span class="toc-text">song 1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-2"><span class="toc-number">1.2.</span> <span class="toc-text">song 2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-3"><span class="toc-number">1.3.</span> <span class="toc-text">song 3</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-4"><span class="toc-number">1.4.</span> <span class="toc-text">song 4</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-5"><span class="toc-number">1.5.</span> <span class="toc-text">song 5</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-6"><span class="toc-number">1.6.</span> <span class="toc-text">song 6</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-7"><span class="toc-number">1.7.</span> <span class="toc-text">song 7</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-8"><span class="toc-number">1.8.</span> <span class="toc-text">song 8</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-9"><span class="toc-number">1.9.</span> <span class="toc-text">song 9</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#song-10-unseen-song"><span class="toc-number">1.10.</span> <span class="toc-text">song 10 (unseen song)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Dataset-2-The-music-of-silence-MOS-Perceived-and-imagined-music"><span class="toc-number">2.</span> <span class="toc-text">Dataset 2: The music of silence (MOS) (Perceived and imagined music)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-1"><span class="toc-number">2.1.</span> <span class="toc-text">melody 1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-1-unseen"><span class="toc-number">2.2.</span> <span class="toc-text">melody 1 (unseen)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-2"><span class="toc-number">2.3.</span> <span class="toc-text">melody 2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-2-unseen"><span class="toc-number">2.4.</span> <span class="toc-text">melody 2 (unseen)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-3"><span class="toc-number">2.5.</span> <span class="toc-text">melody 3</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-3-unseen"><span class="toc-number">2.6.</span> <span class="toc-text">melody 3 (unseen)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-4"><span class="toc-number">2.7.</span> <span class="toc-text">melody 4</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#melody-4-unseen"><span class="toc-number">2.8.</span> <span class="toc-text">melody 4 (unseen)</span></a></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&text=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&title=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&is_video=false&description=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)&body=Check out this article: https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&title=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&title=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&title=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&title=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&name=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://weizhenhit.github.io/EEG2Music/2025/01/16/hello-world/&t=Reconstruction of perceived and imagined music from non-invasive EEG with generative adversarial networks (EEG2Wav-GAN)"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2025
+    WeiZhen
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/EEG2Music/">Home</a></li><!--
+     --><!--
+       --><li><a href="/EEG2Music/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/EEG2Music/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="https://weizhenhit.github.io/EEG2Music/">Projects</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/EEG2Music/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
